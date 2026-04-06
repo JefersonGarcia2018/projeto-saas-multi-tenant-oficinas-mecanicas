@@ -74,7 +74,7 @@ Certifique-se de ter instalado em sua máquina:
 
 4.  **Instalar Dependências e Migrar Banco:**
 
-    **Antes de instalar as Dependências, você precisa fazer o seguinte:**
+    **Antes de instalar as Dependências, no arquivo `docker-compose.yml`, você precisa fazer o seguinte:**
 
     **No serviço 'api':**
 
@@ -98,7 +98,7 @@ Certifique-se de ter instalado em sua máquina:
     docker exec -it projeto-spa npm install
     ```
 
-    **Após instalar as dependências, você precisa fazer o seguinte:**
+    **Após instalar as dependências, no arquivo `docker-compose.yml`, você precisa fazer o seguinte:**
 
     **No serviço 'api':**
     * comente a seguinte linha: **command: tail -f /dev/null**
