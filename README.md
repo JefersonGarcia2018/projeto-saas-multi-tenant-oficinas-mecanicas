@@ -74,17 +74,19 @@ Certifique-se de ter instalado em sua máquina:
 
 4.  **Instalar Dependências e Migrar Banco:**
 
-   *Antes de instalar as dependências, você precisa fazer o seguinte:*
+    **Antes de instalar as Dependências, você precisa fazer o seguinte:**
 
     **No serviço 'api':**
-    * descomente a seguinte linha: command: tail -f /dev/null
-    * comente a seguinte linha: command: php artisan serve --host=0.0.0.0 --port=8000
+
+    * descomente a seguinte linha: **command: tail -f /dev/null**
+    * comente a seguinte linha: **command: php artisan serve --host=0.0.0.0 --port=8000**
 
     **No serviço 'spa':**
-    * descomente a seguinte linha: command: tail -f /dev/null
-    * comente a seguinte linha: command: npx quasar dev -m spa --hostname 0.0.0.0
 
-    **Instalar Dependências e Migrar Banco:**
+    * descomente a seguinte linha: **command: tail -f /dev/null**
+    * comente a seguinte linha: **command: npx quasar dev -m spa --hostname 0.0.0.0**
+
+    **Agora, você consiguirá instalar as Dependências e Migrar Banco:**
 
     ```bash
     # Backend
@@ -96,15 +98,15 @@ Certifique-se de ter instalado em sua máquina:
     docker exec -it projeto-spa npm install
     ```
 
-    *Após instalar as dependências, você precisa fazer o seguinte:*
+    **Após instalar as dependências, você precisa fazer o seguinte:**
 
     **No serviço 'api':**
-    * comente a seguinte linha: command: tail -f /dev/null
-    * descomente a seguinte linha: command: php artisan serve --host=0.0.0.0 --port=8000
+    * comente a seguinte linha: **command: tail -f /dev/null**
+    * descomente a seguinte linha: **command: php artisan serve --host=0.0.0.0 --port=8000**
 
     **No serviço 'spa':**
-    * comente a seguinte linha: command: tail -f /dev/null
-    * descomente a seguinte linha: command: npx quasar dev -m spa --hostname 0.0.0.0
+    * comente a seguinte linha: **command: tail -f /dev/null**
+    * descomente a seguinte linha: **command: npx quasar dev -m spa --hostname 0.0.0.0**
 
 
 -----
