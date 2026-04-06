@@ -41,7 +41,7 @@ Certifique-se de ter instalado em sua máquina:
 
     ```bash
     git clone https://github.com/JefersonGarcia2018/projeto-docker-cadastro-de-produtos-linux.git
-    cd projeto_simples
+    cd projeto-docker-cadastro-de-produtos-linux
     ```
 
 2.  **Configurar Variáveis de Ambiente:**
@@ -66,7 +66,25 @@ Certifique-se de ter instalado em sua máquina:
     docker compose up -d --build
     ```
 
+    **Caso precise parar os Containers:**
+
+    ```bash
+    docker compose stop
+    ```
+
 4.  **Instalar Dependências e Migrar Banco:**
+
+   *Antes de instalar as dependências, você precisa fazer o seguinte:*
+
+    **No serviço 'api':**
+    * descomente a seguinte linha: command: tail -f /dev/null
+    * comente a seguinte linha: command: php artisan serve --host=0.0.0.0 --port=8000
+
+    **No serviço 'spa':**
+    * descomente a seguinte linha: command: tail -f /dev/null
+    * comente a seguinte linha: command: npx quasar dev -m spa --hostname 0.0.0.0
+
+    **Instalar Dependências e Migrar Banco:**
 
     ```bash
     # Backend
@@ -77,6 +95,17 @@ Certifique-se de ter instalado em sua máquina:
     # Frontend
     docker exec -it projeto-spa npm install
     ```
+
+    *Após instalar as dependências, você precisa fazer o seguinte:*
+
+    **No serviço 'api':**
+    * comente a seguinte linha: command: tail -f /dev/null
+    * descomente a seguinte linha: command: php artisan serve --host=0.0.0.0 --port=8000
+
+    **No serviço 'spa':**
+    * comente a seguinte linha: command: tail -f /dev/null
+    * descomente a seguinte linha: command: npx quasar dev -m spa --hostname 0.0.0.0
+
 
 -----
 

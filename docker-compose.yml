@@ -19,6 +19,8 @@ services:
     depends_on:
       - db
     command: php artisan serve --host=0.0.0.0 --port=8000
+    # Truque do "tail" para o container não morrer antes da instalação das dependências
+    #command: tail -f /dev/null
 
   spa:
     build: ./spa
@@ -30,3 +32,5 @@ services:
     stdin_open: true
     tty: true    
     command: npx quasar dev -m spa --hostname 0.0.0.0
+    # Truque do "tail" para o container não morrer antes da instalação das dependências
+    #command: tail -f /dev/null
