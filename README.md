@@ -1,4 +1,4 @@
-# 📦 Full Stack Project: Laravel 12 + Quasar (Vue 3) + Docker
+# 📦 Full Stack Project: Laravel 13 + Quasar (Vue 3) + Docker
 
 Este é um projeto de arquitetura **Cliente-Servidor Desacoplada**, desenvolvido com foco em alta performance e isolamento de ambiente utilizando containers. O sistema consiste em uma API robusta e um SPA (Single Page Application) moderno.
 
@@ -6,7 +6,7 @@ Este é um projeto de arquitetura **Cliente-Servidor Desacoplada**, desenvolvido
 
 ### **Backend (API)**
 
-  * **Framework:** Laravel
+  * **Framework:** Laravel 13
   * **Linguagem:** PHP 8.4 (FPM)
   * **Autenticação/API:** Laravel Sanctum
   * **Gerenciador de Dependências:** Composer
