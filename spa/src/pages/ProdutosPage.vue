@@ -2,8 +2,10 @@
   <q-page padding>
     <div class="q-gutter-md">
 
+      <p class="text-center text-h3">Cadastar - Editar - Excluir</p>
+
       <q-card-section class="row q-gutter-sm">
-        <q-input v-model="form.nome" label="Nome" class="col" />
+        <q-input v-model="form.nome" label="Nome do Produto" class="col" />
         <q-input v-model="form.preco" label="Preço" type="number" class="col" />
 
         <q-btn :label="editando ? 'Atualizar' : 'Adicionar'" :color="editando ? 'orange' : 'primary'"
@@ -11,7 +13,7 @@
         <q-btn v-if="editando" label="Cancelar" flat @click="cancelarEdicao" />
       </q-card-section>
 
-      <q-table title="Meus Produtos" :rows="produtos" :columns="colunas" row-key="id">
+      <q-table title="Listagem de Produtos" :rows="produtos" :columns="colunas" row-key="id">
 
         <template v-slot:body-cell-acoes="props">
           <q-td :props="props" class="q-gutter-xs">
