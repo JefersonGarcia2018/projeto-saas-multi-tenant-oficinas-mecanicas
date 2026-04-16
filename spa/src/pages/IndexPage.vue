@@ -72,18 +72,7 @@
     </div>
 
     <!-- Espaço para futuros Gráficos / Tabela de Ordens de Serviço -->
-    <div class="row q-mt-lg">
-      <div class="col-12">
-        <q-card class="shadow-1">
-          <q-card-section>
-            <div class="text-h6 text-grey-8">Próximos Passos Administrativos</div>
-          </q-card-section>
-          <q-card-section>
-            <p>O módulo de <strong>Ordens de Serviço (OS)</strong> será construído a seguir. Nele, agruparemos os Clientes, seus Veículos, as Peças utilizadas e a Mão-de-Obra orçada para gerar faturamento e controle de caixa.</p>
-          </q-card-section>
-        </q-card>
-      </div>
-    </div>
+    
   </q-page>
 </template>
 
